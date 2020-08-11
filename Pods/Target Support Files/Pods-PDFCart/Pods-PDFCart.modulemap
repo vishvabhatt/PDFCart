@@ -1,0 +1,6 @@
+framework module Pods_PDFCart {
+  umbrella header "Pods-PDFCart-umbrella.h"
+
+  export *
+  module * { export * }
+}
