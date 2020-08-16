@@ -11,6 +11,9 @@ import PDFKit
 import Toast_Swift
 
 
+let dMart = "Item2"
+let electronics = "test"
+
 class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelegate {
     
     //MARK: OBJECTS DECLARATION
@@ -20,11 +23,16 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     var currentlySelectedAnnotation: PDFAnnotation?
     var gesturePDFAnnotationTap = UITapGestureRecognizer()
     var isAnnotationHit = false
-    var pdfDocHeight : CGFloat = 1863
-    var pdfDocWidth : CGFloat = 1166
-    var arrayProducts : [ProductDM] = []
+    var pdfDocHeight : CGFloat = CGFloat.zero
+    var pdfDocWidth : CGFloat = CGFloat.zero
+    var hScale : CGFloat = 1.0
+    var wScale : CGFloat = 1.0
+    //var arrayProducts : [ProductDM] = []
     var drawingTool = DrawingTool.pen
+    let pdfFileName : String = electronics
 
+    var productMaster : ProductMaster!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadPDF()
@@ -40,12 +48,14 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     
     func readJson() {
         do {
-            if let file = Bundle.main.url(forResource: "Products", withExtension: "json") {
+            let jsonName = pdfFileName == "test" ? "ElectronicProducts" : "DMartProducts"
+            if let file = Bundle.main.url(forResource: jsonName, withExtension: "json") {
                 let data = try Data(contentsOf: file)
-                if let arrayDict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [[String:Any]]{
-                    for dict in arrayDict {
+                if let dict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:Any]{
+                    self.productMaster = ProductMaster(dict: dict)
+                    /*for dict in arrayDict {
                         self.arrayProducts.append(ProductDM(dict: dict))
-                    }
+                    }*/
                 }
             } else { print("No Such a File")}
         } catch { print(error.localizedDescription) }
@@ -87,19 +97,18 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     }
     
     func reloadPDF() {
-        let fileName : String = "Item2"
-        if let filePath = self.pdfView.filePath(forKey: fileName) {
+        if let filePath = self.pdfView.filePath(forKey: pdfFileName) {
             if let document = PDFDocument(url: filePath) {
                 pdfView.document = document
             }else{
-                guard let path = Bundle.main.url(forResource: fileName, withExtension: "pdf") else {
+                guard let path = Bundle.main.url(forResource: pdfFileName, withExtension: "pdf") else {
                     print("file not found")
                     return
                 }
                 pdfView.document = PDFDocument(url: path)
             }
         }else{
-            guard let path = Bundle.main.url(forResource: fileName, withExtension: "pdf") else {
+            guard let path = Bundle.main.url(forResource: pdfFileName, withExtension: "pdf") else {
                 print("file not found")
                 return
             }
@@ -110,24 +119,35 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
         pdfView.autoScales = true
         pdfView.scaleFactor = self.pdfView.scaleFactorForSizeToFit
         
-        
-        
-       /* if let pdfDoc = self.pdfView.document {
+       if let pdfDoc = self.pdfView.document {
             if let pdfPage = pdfDoc.page(at: 0) {
-                let inkAnnotation = PDFAnnotation(bounds: pdfPage.bounds(for: .mediaBox), forType: PDFAnnotationSubtype.ink, withProperties: nil)
-                inkAnnotation.color = UIColor.red
-                pdfPage.addAnnotation(inkAnnotation)
+                let inkAnnotation = PDFAnnotation(bounds: pdfPage.bounds(for: .cropBox), forType: PDFAnnotationSubtype.ink, withProperties: nil)
+                self.hScale = inkAnnotation.bounds.height/self.productMaster.pdfHeight
+                self.wScale = inkAnnotation.bounds.width/self.productMaster.pdfWidth
+                self.pdfDocHeight = inkAnnotation.bounds.height
+                self.pdfDocWidth = inkAnnotation.bounds.width
+                print("PDFHeight \(self.pdfDocHeight)")
+                print("PDFWidth \(self.pdfDocWidth)")
             }
-        }*/
+        }
     }
     
     func addProductViews() {
-        for product in self.arrayProducts {
+        /*for product in self.productMaster.arrayProducts {
             let productView = UIView(frame: product.productCoords)
             productView.backgroundColor = UIColor.blue.withAlphaComponent(0.35)
             productView.isUserInteractionEnabled = false
             self.pdfView.documentView!.addSubview(productView)
-        }
+        }*/
+        
+         for product in self.productMaster.arrayProducts {
+             let productC = CGRect(x: product.productCoords.origin.x * wScale, y: product.productCoords.origin.y * hScale, width: product.productCoords.width * wScale, height: product.productCoords.height * hScale)
+             let productView = UIView(frame: productC)
+             productView.backgroundColor = UIColor.blue.withAlphaComponent(0.35)
+             productView.isUserInteractionEnabled = false
+             self.pdfView.documentView!.addSubview(productView)
+         }
+         
     }
     
     func convert(_ point: CGPoint, from fromRect: CGRect, to toRect: CGRect) -> CGPoint {
@@ -157,15 +177,52 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
         if gestureRecognizer.state == .ended {
             let touchLocInDoc = gestureRecognizer.location(in: self.pdfView.documentView!)
             guard let page = self.pdfView.page(for: touchLocInDoc, nearest: true) else {return}
-            let products = self.arrayProducts.indices.filter {self.arrayProducts[$0].productCoords.contains(touchLocInDoc)}
-            if !products.isEmpty, let firstIndex = products.first {
-                let matchedProduct = self.arrayProducts[firstIndex]
+            if let matchedProduct = self.getProduct(point2: touchLocInDoc) {
                 let coordinates = matchedProduct.productCoords
-                var y = (self.pdfDocHeight - coordinates.origin.y)
-                y = y - coordinates.height
-                let productannote = CGRect(x: coordinates.origin.x, y: y < 0 ? 0 : y, width: coordinates.width, height: coordinates.height)
-                self.addAnnot(page: page, conver: productannote, product: matchedProduct)
+                let yf = coordinates.origin.y * self.hScale
+                var y = (self.pdfDocHeight - yf)
+                y = y - (coordinates.height * self.hScale)
+                let productC = CGRect(x: coordinates.origin.x * wScale, y: y < 0 ? 0 : y , width: coordinates.width * wScale, height: coordinates.height * hScale)
+                self.addAnnot(page: page, conver: productC, product: matchedProduct)
             }
+            /*let products = self.productMaster.arrayProducts.indices.filter { (index) -> Bool in
+                
+                let x = touchLocInDoc.x
+                let y = touchLocInDoc.y
+                var width = self.productMaster.arrayProducts[index].productCoords.width
+                var height = self.productMaster.arrayProducts[index].productCoords.height
+                width = width * wScale
+                height = height * hScale
+               
+                let rect = CGRect(x: x - 25 , y: y - 25, width:  50, height:50)
+                
+                let addView = UIView(frame: rect)
+                addView.backgroundColor = UIColor.brown.withAlphaComponent(0.5)
+                addView.tag = 121
+                if let hasView = self.pdfView.documentView?.viewWithTag(121)  {
+                    hasView.removeFromSuperview()
+                }
+                else{
+                    self.pdfView.documentView?.addSubview(addView)
+
+                }
+                var compartive = self.productMaster.arrayProducts[index].productCoords
+                compartive = CGRect(x: compartive.origin.x * wScale, y: compartive.origin.y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
+                
+                return (compartive.contains(touchLocInDoc))
+            }
+//            let products = self.productMaster.arrayProducts.indices.filter {self.productMaster.arrayProducts[$0].productCoords.contains(touchLocInDoc)}
+            if !products.isEmpty, let firstIndex = products.first {
+                let matchedProduct = self.productMaster.arrayProducts[firstIndex]
+                let coordinates = matchedProduct.productCoords
+                let yf = coordinates.origin.y * self.hScale
+                var y = (self.pdfDocHeight - yf)
+                y = y - (coordinates.height * self.hScale)
+                
+                let productC = CGRect(x: coordinates.origin.x * wScale, y: y < 0 ? 0 : y , width: coordinates.width * wScale, height: coordinates.height * hScale)
+                let productannote = CGRect(x: coordinates.origin.x, y: y < 0 ? 0 : y, width: coordinates.width, height: coordinates.height)
+                self.addAnnot(page: page, conver: productC, product: matchedProduct)
+            }*/
         }
     }
     
@@ -304,12 +361,25 @@ extension ViewController{
         self.pdfView.currentPage?.removeAnnotation(annotation)
         self.pdfView.annotationsChanged(on: self.pdfView.currentPage!)
         let testCord = CGPoint(x: annotation.bounds.origin.x, y: self.pdfDocHeight - annotation.bounds.origin.y - annotation.bounds.height)
-        let products = self.arrayProducts.indices.filter {self.arrayProducts[$0].productCoords.contains(testCord)}
+        if let matchedProduct = self.getProduct(point2: testCord) {
+            showToast(message: "\(matchedProduct.productName) removed from cart.")
+        }
+        /*let products = self.productMaster.arrayProducts.indices.filter { (index) -> Bool in
+            var compartive = self.productMaster.arrayProducts[index].productCoords
+            compartive = CGRect(x: compartive.origin.x * wScale, y: compartive.origin.y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
+            return (compartive.contains(testCord))
+        }
         if !products.isEmpty, let firstIndex = products.first {
-            let matchedProduct = self.arrayProducts[firstIndex]
+            let matchedProduct = self.productMaster.arrayProducts[firstIndex]
             showToast(message: "\(matchedProduct.productName) removed from cart.")
 
-        }
+        }*/
+        /*let products = self.productMaster.arrayProducts.indices.filter {self.productMaster.arrayProducts[$0].productCoords.contains(testCord)}
+        if !products.isEmpty, let firstIndex = products.first {
+            let matchedProduct = self.productMaster.arrayProducts[firstIndex]
+            showToast(message: "\(matchedProduct.productName) removed from cart.")
+
+        }*/
         
     }
     @objc func pdfViewAnnotationWillHit(notification : NSNotification) {
@@ -317,6 +387,30 @@ extension ViewController{
     }
     @objc func pdfViewSelectionChanged(notification : NSNotification.Name) {
         print("Notification : pdfViewSelectionChanged")
+    }
+    
+    func getProduct(point2:CGPoint) -> ProductDM?{
+        let products = self.productMaster.arrayProducts.indices.filter { (index) -> Bool in
+            var compartive = self.productMaster.arrayProducts[index].productCoords
+            compartive = CGRect(x: compartive.origin.x * wScale, y: compartive.origin.y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
+            return compartive.contains(point2)
+        }
+        if !products.isEmpty, let firstIndex = products.first {
+            return self.productMaster.arrayProducts[firstIndex]
+        }
+        return nil
+    }
+    
+    func getProduct(rect2:CGRect) -> ProductDM?{
+        let products = self.productMaster.arrayProducts.indices.filter { (index) -> Bool in
+            var compartive = self.productMaster.arrayProducts[index].productCoords
+            compartive = CGRect(x: compartive.origin.x * wScale, y: compartive.origin.y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
+            return compartive.contains(rect2)
+        }
+        if !products.isEmpty, let firstIndex = products.first {
+            return self.productMaster.arrayProducts[firstIndex]
+        }
+        return nil
     }
     
 }

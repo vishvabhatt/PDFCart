@@ -10,7 +10,9 @@
 		5811190F24E136E700D86E48 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811190C24E136E700D86E48 /* Misc.swift */; };
 		5811191024E136E700D86E48 /* WritablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811190D24E136E700D86E48 /* WritablePage.swift */; };
 		5811191124E136E700D86E48 /* WritablePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811190E24E136E700D86E48 /* WritablePageView.swift */; };
-		588CBFFF24DD171D00102267 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 588CBFFE24DD171C00102267 /* Products.json */; };
+		583A522424E65D1600E689B5 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 583A522324E65D1600E689B5 /* test.pdf */; };
+		583A522624E65FBA00E689B5 /* ElectronicProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 583A522524E65E1300E689B5 /* ElectronicProducts.json */; };
+		588CBFFF24DD171D00102267 /* DMartProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 588CBFFE24DD171C00102267 /* DMartProducts.json */; };
 		588CC00124DD1BA000102267 /* ProductDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588CC00024DD1BA000102267 /* ProductDM.swift */; };
 		58F1E2EE24DD44A1008B089D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F1E2ED24DD44A1008B089D /* ProductViewController.swift */; };
 		9C2C8A2A2FC8F62C51ADDAF4 /* Pods_PDFCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936E4CE7A32E679B7AE47838 /* Pods_PDFCart.framework */; };
@@ -35,7 +37,9 @@
 		5811190C24E136E700D86E48 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		5811190D24E136E700D86E48 /* WritablePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritablePage.swift; sourceTree = "<group>"; };
 		5811190E24E136E700D86E48 /* WritablePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritablePageView.swift; sourceTree = "<group>"; };
-		588CBFFE24DD171C00102267 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		583A522324E65D1600E689B5 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		583A522524E65E1300E689B5 /* ElectronicProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ElectronicProducts.json; sourceTree = "<group>"; };
+		588CBFFE24DD171C00102267 /* DMartProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DMartProducts.json; sourceTree = "<group>"; };
 		588CC00024DD1BA000102267 /* ProductDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDM.swift; sourceTree = "<group>"; };
 		58F1E2ED24DD44A1008B089D /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		936E4CE7A32E679B7AE47838 /* Pods_PDFCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +121,8 @@
 				B201939324A5D84700D4464A /* ViewController.swift */,
 				58F1E2ED24DD44A1008B089D /* ProductViewController.swift */,
 				588CC00024DD1BA000102267 /* ProductDM.swift */,
-				588CBFFE24DD171C00102267 /* Products.json */,
+				588CBFFE24DD171C00102267 /* DMartProducts.json */,
+				583A522524E65E1300E689B5 /* ElectronicProducts.json */,
 				B20193A324A5D8F800D4464A /* PDFs */,
 				B201939524A5D84700D4464A /* Main.storyboard */,
 				B201939824A5D84C00D4464A /* Assets.xcassets */,
@@ -130,6 +135,7 @@
 		B20193A324A5D8F800D4464A /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
+				583A522324E65D1600E689B5 /* test.pdf */,
 				B20193A924A61EB300D4464A /* Item2.pdf */,
 				B20193A424A5D90600D4464A /* Items.pdf */,
 			);
@@ -215,10 +221,12 @@
 			files = (
 				B20193AA24A61EB300D4464A /* Item2.pdf in Resources */,
 				B201939C24A5D84C00D4464A /* LaunchScreen.storyboard in Resources */,
-				588CBFFF24DD171D00102267 /* Products.json in Resources */,
+				588CBFFF24DD171D00102267 /* DMartProducts.json in Resources */,
+				583A522624E65FBA00E689B5 /* ElectronicProducts.json in Resources */,
 				B201939924A5D84C00D4464A /* Assets.xcassets in Resources */,
 				B201939724A5D84700D4464A /* Main.storyboard in Resources */,
 				B20193A524A5D90600D4464A /* Items.pdf in Resources */,
+				583A522424E65D1600E689B5 /* test.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
