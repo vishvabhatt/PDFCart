@@ -26,18 +26,6 @@ struct ProductMaster {
             return
         }
     }
-    
-    /*init(dict: [String:Any]){
-        if let name = dict["p_name"] as? String, let coords = dict["p_coords"] as? [Double] {
-            self.productName = name
-            self.productCoords = CGRect(x: coords[0], y: coords[1], width: coords[2], height: coords[3])
-        }
-        else{
-            print("Watch Out")
-            return
-        }
-    }*/
-    
 }
 
 struct ProductDM {
