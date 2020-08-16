@@ -1,0 +1,43 @@
+{
+    "pdfWidth" :1166,
+    "pdfHeight":1863,
+    "products":
+    [
+      {
+        "p_name": "Rice",
+        "p_coords": [27,412,246,138]
+      },
+      {
+        "p_name": "Dry Fruits",
+        "p_coords": [323,740,246,138]
+      },
+      {
+        "p_name": "Nivea",
+        "p_coords": [317,1242,246,138]
+      },
+      {
+        "p_name": "Amul butter",
+        "p_coords": [894,911,246,138]
+      },
+      {
+        "p_name": "Blue Shirt for Men",
+        "p_coords": [609,1564,246,138]
+      },
+      {
+        "p_name": "Nonstick Tava",
+        "p_coords": [23,1407,246,138]
+      },
+      {
+        "p_name": "Loose fried gram",
+        "p_coords": [882,580,246,138]
+      },
+      {
+        "p_name": "Wipro",
+        "p_coords": [609,749,246,138]
+      },
+      {
+        "p_name": "Safola Gold",
+        "p_coords": [23,917,246,138]
+      }
+    ]
+}
