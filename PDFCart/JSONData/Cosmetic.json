@@ -1,0 +1,22 @@
+{
+  "pdfWidth" :400,
+  "pdfHeight":523,
+
+  "products":[
+  {
+    "p_name": "Neutrogena",
+    "p_coords": [6,80,193,176]
+  },
+  {
+    "p_name": "Maybelline New York",
+    "p_coords": [200,80,193,176]
+  },
+  {
+    "p_name": "Penadol3",
+    "p_coords": [200,260,193,176]
+  },
+  {
+    "p_name": "Bio Oil",
+    "p_coords": [6,260,193,176]
+  }
+]}

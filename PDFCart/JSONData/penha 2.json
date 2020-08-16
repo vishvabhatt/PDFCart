@@ -1,0 +1,34 @@
+{
+  "pdfWidth" :1388,
+  "pdfHeight":1556,
+
+  "products":[
+  {
+    "p_name": "Chromebook",
+    "p_coords": [59,32,302,306]
+  },
+  {
+    "p_name": "HP Black Printer",
+    "p_coords": [51,366,302,306]
+  },
+  {
+    "p_name": "HP White Printer",
+    "p_coords": [378,364,302,306]
+  },
+  {
+    "p_name": "Asus Intel Core i5",
+    "p_coords": [1015,39,302,306]
+  },
+  {
+    "p_name": "Pen Drive",
+    "p_coords": [302,716,252,316]
+  },
+  {
+    "p_name": "DLink Router",
+    "p_coords": [1103,713,235,306]
+  },
+  {
+    "p_name": "Wireless Sound System",
+    "p_coords": [700,1042,328,306]
+  }
+]}

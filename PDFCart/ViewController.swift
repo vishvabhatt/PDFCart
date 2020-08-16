@@ -11,8 +11,51 @@ import PDFKit
 import Toast_Swift
 
 
-let dMart = "Item2"
-let electronics = "test"
+enum ProductFlyer : String {
+    case penha_1 = "penha 1"
+    case penha_2 = "penha 2"
+    case penha_3 = "penha 3"
+    case spanishFlyer = "SpanishFlyer"
+    case supermarket = "SuperMarket"
+    case cosmetic = "Cosmetic"
+    case electricProduct = "ElectricProduct"
+    case dmart = "DMart"
+    
+    func jsonFileName() -> JSON_Response {
+        switch self {
+        case .penha_1:
+            return .penha_1
+        case .penha_2:
+            return .penha_2
+        case .penha_3:
+            return .penha_3
+        case .spanishFlyer:
+            return .spanishFlyer
+        case .supermarket:
+            return .supermarket
+        case .cosmetic:
+            return .cosmetic
+        case .electricProduct:
+            return .electricProduct
+        case .dmart:
+            return .dmart
+        }
+    }
+}
+
+enum JSON_Response : String {
+    case penha_1 = "penha 1"
+    case penha_2 = "penha 2"
+    case penha_3 = "penha 3"
+    case supermarket = "SuperMarket"
+    case spanishFlyer = "SpanishFlyer"
+    case cosmetic = "Cosmetic"
+    case electricProduct = "ElectronicProducts"
+    case dmart = "DMartProducts"
+}
+
+
+
 
 class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelegate {
     
@@ -28,7 +71,7 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     var hScale : CGFloat = 1.0
     var wScale : CGFloat = 1.0
     var drawingTool = DrawingTool.pen
-    let pdfFileName : String = electronics
+    let productFlyer : ProductFlyer = .cosmetic
 
     var productMaster : ProductMaster!
     
@@ -47,7 +90,7 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     
     func readJson() {
         do {
-            let jsonName = pdfFileName == "test" ? "ElectronicProducts" : "DMartProducts"
+            let jsonName = self.productFlyer.jsonFileName().rawValue
             if let file = Bundle.main.url(forResource: jsonName, withExtension: "json") {
                 let data = try Data(contentsOf: file)
                 if let dict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:Any]{
@@ -93,18 +136,18 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     }
     
     func reloadPDF() {
-        if let filePath = self.pdfView.filePath(forKey: pdfFileName) {
+        if let filePath = self.pdfView.filePath(forKey: self.productFlyer.rawValue) {
             if let document = PDFDocument(url: filePath) {
                 pdfView.document = document
             }else{
-                guard let path = Bundle.main.url(forResource: pdfFileName, withExtension: "pdf") else {
+                guard let path = Bundle.main.url(forResource: self.productFlyer.rawValue, withExtension: "pdf") else {
                     print("file not found")
                     return
                 }
                 pdfView.document = PDFDocument(url: path)
             }
         }else{
-            guard let path = Bundle.main.url(forResource: pdfFileName, withExtension: "pdf") else {
+            guard let path = Bundle.main.url(forResource: self.productFlyer.rawValue, withExtension: "pdf") else {
                 print("file not found")
                 return
             }
