@@ -27,7 +27,6 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     var pdfDocWidth : CGFloat = CGFloat.zero
     var hScale : CGFloat = 1.0
     var wScale : CGFloat = 1.0
-    //var arrayProducts : [ProductDM] = []
     var drawingTool = DrawingTool.pen
     let pdfFileName : String = electronics
 
@@ -53,9 +52,6 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
                 let data = try Data(contentsOf: file)
                 if let dict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:Any]{
                     self.productMaster = ProductMaster(dict: dict)
-                    /*for dict in arrayDict {
-                        self.arrayProducts.append(ProductDM(dict: dict))
-                    }*/
                 }
             } else { print("No Such a File")}
         } catch { print(error.localizedDescription) }
@@ -133,14 +129,7 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
     }
     
     func addProductViews() {
-        /*for product in self.productMaster.arrayProducts {
-            let productView = UIView(frame: product.productCoords)
-            productView.backgroundColor = UIColor.blue.withAlphaComponent(0.35)
-            productView.isUserInteractionEnabled = false
-            self.pdfView.documentView!.addSubview(productView)
-        }*/
-        
-         for product in self.productMaster.arrayProducts {
+        for product in self.productMaster.arrayProducts {
              let productC = CGRect(x: product.productCoords.origin.x * wScale, y: product.productCoords.origin.y * hScale, width: product.productCoords.width * wScale, height: product.productCoords.height * hScale)
              let productView = UIView(frame: productC)
              productView.backgroundColor = UIColor.blue.withAlphaComponent(0.35)
@@ -185,44 +174,6 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
                 let productC = CGRect(x: coordinates.origin.x * wScale, y: y < 0 ? 0 : y , width: coordinates.width * wScale, height: coordinates.height * hScale)
                 self.addAnnot(page: page, conver: productC, product: matchedProduct)
             }
-            /*let products = self.productMaster.arrayProducts.indices.filter { (index) -> Bool in
-                
-                let x = touchLocInDoc.x
-                let y = touchLocInDoc.y
-                var width = self.productMaster.arrayProducts[index].productCoords.width
-                var height = self.productMaster.arrayProducts[index].productCoords.height
-                width = width * wScale
-                height = height * hScale
-               
-                let rect = CGRect(x: x - 25 , y: y - 25, width:  50, height:50)
-                
-                let addView = UIView(frame: rect)
-                addView.backgroundColor = UIColor.brown.withAlphaComponent(0.5)
-                addView.tag = 121
-                if let hasView = self.pdfView.documentView?.viewWithTag(121)  {
-                    hasView.removeFromSuperview()
-                }
-                else{
-                    self.pdfView.documentView?.addSubview(addView)
-
-                }
-                var compartive = self.productMaster.arrayProducts[index].productCoords
-                compartive = CGRect(x: compartive.origin.x * wScale, y: compartive.origin.y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
-                
-                return (compartive.contains(touchLocInDoc))
-            }
-//            let products = self.productMaster.arrayProducts.indices.filter {self.productMaster.arrayProducts[$0].productCoords.contains(touchLocInDoc)}
-            if !products.isEmpty, let firstIndex = products.first {
-                let matchedProduct = self.productMaster.arrayProducts[firstIndex]
-                let coordinates = matchedProduct.productCoords
-                let yf = coordinates.origin.y * self.hScale
-                var y = (self.pdfDocHeight - yf)
-                y = y - (coordinates.height * self.hScale)
-                
-                let productC = CGRect(x: coordinates.origin.x * wScale, y: y < 0 ? 0 : y , width: coordinates.width * wScale, height: coordinates.height * hScale)
-                let productannote = CGRect(x: coordinates.origin.x, y: y < 0 ? 0 : y, width: coordinates.width, height: coordinates.height)
-                self.addAnnot(page: page, conver: productC, product: matchedProduct)
-            }*/
         }
     }
     
@@ -247,39 +198,6 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
         }, completion: { (finished) -> Void in
             self.showToast(message: "\(product.productName) added to cart.")
         })
-    
-        
-        /*CATransaction.begin()
-
-        let layer : CAShapeLayer = CAShapeLayer()
-        layer.strokeColor = UIColor.purple.cgColor
-        layer.lineWidth = 3.0
-        layer.fillColor = UIColor.clear.cgColor
-
-        let path : UIBezierPath = UIBezierPath(roundedRect:conver, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: 5.0, height: 0.0))
-        layer.path = path.cgPath
-
-        let animation : CABasicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.fromValue = 0.0
-        animation.toValue = 1.0
-
-        animation.duration = 1.0
-
-        layer.add(animation, forKey: "myStroke")
-        CATransaction.commit()
-        let pageBounds = page.bounds(for: .cropBox)
-        let annotation = PDFAnnotation(bounds: pageBounds, forType: .ink, withProperties: nil)
-        annotation.color = UIColor.green
-        let border = PDFBorder()
-        border.lineWidth = 4.0
-        border.style = .beveled
-        annotation.border = border
-        annotation.add(path)
-
-        CATransaction.setCompletionBlock{ [weak self] in
-            print("Animation completed")
-            page.addAnnotation(annotation)
-        }*/
     }
     
     private func createAnnotation(path: UIBezierPath, page: PDFPage) -> DrawingAnnotation {
@@ -364,22 +282,6 @@ extension ViewController{
         if let matchedProduct = self.getProduct(point2: testCord) {
             showToast(message: "\(matchedProduct.productName) removed from cart.")
         }
-        /*let products = self.productMaster.arrayProducts.indices.filter { (index) -> Bool in
-            var compartive = self.productMaster.arrayProducts[index].productCoords
-            compartive = CGRect(x: compartive.origin.x * wScale, y: compartive.origin.y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
-            return (compartive.contains(testCord))
-        }
-        if !products.isEmpty, let firstIndex = products.first {
-            let matchedProduct = self.productMaster.arrayProducts[firstIndex]
-            showToast(message: "\(matchedProduct.productName) removed from cart.")
-
-        }*/
-        /*let products = self.productMaster.arrayProducts.indices.filter {self.productMaster.arrayProducts[$0].productCoords.contains(testCord)}
-        if !products.isEmpty, let firstIndex = products.first {
-            let matchedProduct = self.productMaster.arrayProducts[firstIndex]
-            showToast(message: "\(matchedProduct.productName) removed from cart.")
-
-        }*/
         
     }
     @objc func pdfViewAnnotationWillHit(notification : NSNotification) {
