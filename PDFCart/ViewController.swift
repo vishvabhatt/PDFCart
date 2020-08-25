@@ -185,11 +185,6 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
         pdfView.sizeToFit()
         pdfView.autoScales = true
         pdfView.scaleFactor = self.pdfView.scaleFactorForSizeToFit
-        /*self.currentPage = 4
-        if let page10 = self.pdfView.document?.page(at:self.currentPage) {
-            pdfView.go(to: page10)
-        }*/
-        
     }
     
     func updateScaleAsPerPage(){
@@ -204,28 +199,12 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
         }
     }
     
-    /*func addProductViews() {
-        self.updateScaleAsPerPage()
-        if self.pdfView.isHidden == false {
-            for product in self.productMaster.pdfPages[currentPage].arrayProducts {
-                let productC = CGRect(x: product.pCoords.origin.x * wScale, y: product.pCoords.origin.y * hScale, width: product.pCoords.width * wScale, height: product.pCoords.height * hScale)
-                let productView = UIView(frame: productC)
-                productView.backgroundColor = UIColor.blue.withAlphaComponent(0.35)
-                productView.isUserInteractionEnabled = false
-                self.pdfView.documentView!.addSubview(productView)
-            }
-        }
-    }*/
     func addProductViews() {
         self.updateScaleAsPerPage()
         if !pdfView.isHidden, (self.pdfView.documentView?.viewWithTag(currentPage + 1111)) == nil, let docView = self.pdfView.documentView {
             for product in self.productMaster.pdfPages[currentPage].arrayProducts {
                 let y = (self.getYElement() + product.pCoords.origin.y)
                 let productC = CGRect(x: product.pCoords.origin.x * wScale, y:  y * hScale, width: product.pCoords.width * wScale, height: product.pCoords.height * hScale)
-
-                /*let y = (self.getYElement() * hScale) + (product.pCoords.origin.y * hScale)
-                let productC = CGRect(x: product.pCoords.origin.x * wScale, y:  y, width: product.pCoords.width * wScale, height: product.pCoords.height * hScale)*/
-                
                 let productView = UIView(frame: productC)
                 productView.tag = currentPage + 1111
                 productView.backgroundColor = UIColor.blue.withAlphaComponent(0.35)
@@ -238,27 +217,7 @@ class ViewController: UIViewController,PDFViewDelegate,UIGestureRecognizerDelega
         }
         else if let view = (self.pdfView.documentView?.viewWithTag(currentPage + 1111)) {
             view.isHidden = false
-            print("view is \(view)")
         }
-        
-        
-        /*if self.pdfView.isHidden == false{
-            for pdfPage in self.productMaster.pdfPages{
-                for product in pdfPage.arrayProducts {
-                    
-                }
-            }
-        }
-        
-        if self.pdfView.isHidden == false {
-            for product in self.productMaster.pdfPages[currentPage].arrayProducts {
-                let productC = CGRect(x: product.pCoords.origin.x * wScale, y: product.pCoords.origin.y * hScale, width: product.pCoords.width * wScale, height: product.pCoords.height * hScale)
-                let productView = UIView(frame: productC)
-                productView.backgroundColor = UIColor.blue.withAlphaComponent(0.35)
-                productView.isUserInteractionEnabled = false
-                self.pdfView.documentView!.addSubview(productView)
-            }
-        }*/
     }
     
     @objc func singleHandleTap(_ gestureRecognizer: UITapGestureRecognizer) {
@@ -422,36 +381,10 @@ extension ViewController{
         print("Notification : pdfViewSelectionChanged")
     }
     
-    /*func getProduct(point2:CGPoint) -> Product?{
-        let products = self.productMaster.pdfPages[currentPage].arrayProducts.indices.filter { (index) -> Bool in
-            var compartive = self.productMaster.pdfPages[currentPage].arrayProducts[index].pCoords
-            let y = self.getYElement() + compartive.origin.y
-            compartive = CGRect(x: compartive.origin.x * wScale, y: y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
-            return compartive.contains(point2)
-        }
-        if !products.isEmpty, let firstIndex = products.first {
-            return self.productMaster.pdfPages[currentPage].arrayProducts[firstIndex]
-        }
-        return nil
-    }*/
-    
     func getProduct(point2:CGPoint) -> Product?{
         let products = self.productMaster.pdfPages[currentPage].arrayProducts.indices.filter { (index) -> Bool in
             var compartive = self.productMaster.pdfPages[currentPage].arrayProducts[index].pCoords
             let y = self.getYElement() + compartive.origin.y
-            compartive = CGRect(x: compartive.origin.x * wScale, y: y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
-            return compartive.contains(point2)
-        }
-        if !products.isEmpty, let firstIndex = products.first {
-            return self.productMaster.pdfPages[currentPage].arrayProducts[firstIndex]
-        }
-        return nil
-    }
-    
-    func getProductDeSelect(point2:CGPoint) -> Product?{
-        let products = self.productMaster.pdfPages[currentPage].arrayProducts.indices.filter { (index) -> Bool in
-            var compartive = self.productMaster.pdfPages[currentPage].arrayProducts[index].pCoords
-            let y = self.getYElement() - compartive.origin.y
             compartive = CGRect(x: compartive.origin.x * wScale, y: y * hScale, width:compartive.width * wScale, height: compartive.height * hScale)
             return compartive.contains(point2)
         }
@@ -508,83 +441,3 @@ extension CGRect{
         return self.inset(by: edgeInsets).offsetBy(dx: leftOffset, dy: upOffset)
     }
 }
-
-/*
-class DrawingAnnotation: PDFAnnotation {
-    public var path = UIBezierPath()
-    
-    override func draw(with box: PDFDisplayBox, in context: CGContext) {
-        let pathCopy = path.copy() as! UIBezierPath
-        UIGraphicsPushContext(context)
-        context.saveGState()
-        
-        context.setShouldAntialias(true)
-        
-        color.set()
-        pathCopy.lineJoinStyle = .round
-        pathCopy.lineCapStyle = .round
-        pathCopy.lineWidth = border?.lineWidth ?? 1.0
-        pathCopy.stroke()
-        
-        context.restoreGState()
-        UIGraphicsPopContext()
-    }
-}
-
-enum DrawingTool: Int {
-    case eraser = 0
-    case pencil = 1
-    case pen = 2
-    case highlighter = 3
-    
-    var width: CGFloat {
-        switch self {
-        case .pencil:
-            return 1
-        case .pen:
-            return 5
-        case .highlighter:
-            return 10
-        default:
-            return 0
-        }
-    }
-    
-    var alpha: CGFloat {
-        switch self {
-        case .highlighter:
-            return 0.3 //0,5
-        default:
-            return 1
-        }
-    }
-}
- 
- private func createAnnotation(path: UIBezierPath, page: PDFPage) -> DrawingAnnotation {
-     let border = PDFBorder()
-     border.lineWidth = drawingTool.width
-     
-     let annotation = DrawingAnnotation(bounds: page.bounds(for: pdfView.displayBox), forType: .ink, withProperties: nil)
-     annotation.color = UIColor.cyan.withAlphaComponent(drawingTool.alpha)
-     annotation.border = border
-     return annotation
- }
-
-func convert(_ point: CGPoint, from fromRect: CGRect, to toRect: CGRect) -> CGPoint {
-    return CGPoint(x: (toRect.size.width * point.x) / fromRect.size.width, y: (toRect.size.height * point.y) / fromRect.size.height)
-}
-
-func convert(_ point: CGRect, from fromRect: CGRect, to toRect: CGRect) -> CGRect {
-    return CGRect(x: (toRect.size.width * point.origin.x) / fromRect.size.width, y: (toRect.size.height * point.origin.y) / fromRect.size.height, width: (toRect.size.width * point.width) / fromRect.size.width,height: (toRect.size.height * point.height) / fromRect.size.height)
-}
-
-private func createFinalAnnotation(area:CGRect, page: PDFPage, color:UIColor) -> PDFAnnotation {
-    let border = PDFBorder()
-    border.lineWidth = drawingTool.width
-    let annotation = PDFAnnotation(bounds: area, forType: .ink, withProperties: nil)
-    annotation.color = color.withAlphaComponent(drawingTool.alpha)
-    annotation.border = border
-    page.addAnnotation(annotation)
-    return annotation
-}
-*/
