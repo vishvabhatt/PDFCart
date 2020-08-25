@@ -1,8 +1,59 @@
 {
-    "pdfWidth" :0,
-    "pdfHeight":0,
+    "pdfWidth" :400,
+    "pdfHeight":711,
     "products":
     [
-      
+      {
+        "p_name": "Colgate",
+        "p_coords": [25,240,85,85]
+      },
+      {
+        "p_name": "Rexona",
+        "p_coords": [25,325,85,85]
+      },
+      {
+        "p_name": "Deo",
+        "p_coords": [110,240,85,85]
+      },
+      {
+        "p_name": "Plamolive Shampoo",
+        "p_coords": [195,210,85,85]
+      },
+      {
+        "p_name": "Sauve Shampoo",
+        "p_coords": [280,210,85,85]
+      },
+      {
+        "p_name": "Colgate tooth brush",
+        "p_coords": [280,295,85,85]
+      },
+      {
+        "p_name": "Natural Baby",
+        "p_coords": [195,293,85,85]
+      },
+      {
+        "p_name": "Always",
+        "p_coords": [110,325,85,85]
+      },
+      {
+        "p_name": "Aqua Water Bottle",
+        "p_coords": [15,418,75,85]
+      },
+      {
+        "p_name": "Ala Ala Ala",
+        "p_coords": [92,432,68,62]
+      },
+      {
+        "p_name": "Omo Detergent",
+        "p_coords": [158,432,68,62]
+      },
+      {
+        "p_name": "Brilhex",
+        "p_coords": [227,432,68,62]
+      },
+      {
+        "p_name": "Guarani",
+        "p_coords": [297,432,68,62]
+      }
     ]
 }

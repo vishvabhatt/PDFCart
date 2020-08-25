@@ -10,14 +10,14 @@ import UIKit
 
 class ProductViewController: UIViewController {
 
-    let product : ProductDM? = nil
+    let product : Product? = nil
     
     @IBOutlet weak var lblSelectedProduct: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let prod = self.product {
-            self.lblSelectedProduct.text = prod.productName
+            self.lblSelectedProduct.text = prod.pName
         }
     }
     

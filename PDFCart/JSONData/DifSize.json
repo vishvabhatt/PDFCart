@@ -1,0 +1,139 @@
+{
+  "totalPages": 4,
+  "pdfPages": [
+    {
+      "pageName": "1",
+      "page_Width": 400,
+      "page_Height": 523,
+      "products": [
+        {
+          "p_name": "Neutrogena",
+          "p_coords": [6,80,193,176]
+        },
+        {
+          "p_name": "Maybelline New York",
+          "p_coords": [200,80,193,176]
+        },
+        {
+          "p_name": "Penadol3",
+          "p_coords": [200,260,193,176]
+        },
+        {
+          "p_name": "Bio Oil",
+          "p_coords": [6,260,193,176]
+        }
+      ]
+    },
+    {
+      "pageName": "2",
+      "page_Width": 1166,
+      "page_Height": 1863,
+      "products": [
+        {
+          "p_name": "Rice",
+          "p_coords": [27,412,246,138]
+        },
+        {
+          "p_name": "Dry Fruits",
+          "p_coords": [323,740,246,138]
+        },
+        {
+          "p_name": "Nivea",
+          "p_coords": [317,1242,246,138]
+        },
+        {
+          "p_name": "Amul butter",
+          "p_coords": [894,911, 246, 138
+          ]
+        },
+        {
+          "p_name": "Blue Shirt for Men",
+          "p_coords": [609, 1564,246,138
+          ]
+        },
+        {
+          "p_name": "Nonstick Tava",
+          "p_coords": [23,1407, 246, 138]
+        },
+        {
+          "p_name": "Loose fried gram",
+          "p_coords": [882, 580, 246,138]
+        },
+        {
+          "p_name": "Wipro",
+          "p_coords": [609,749,246,138]
+        },
+        {
+          "p_name": "Safola Gold",
+          "p_coords": [23,917,246,138]
+        }
+      ]
+    },
+    {
+      "pageName": "3",
+      "page_Width": 1388,
+      "page_Height": 1556,
+      "products": [
+        {
+          "p_name": "Chromebook",
+          "p_coords": [59,32,302,306]
+        },
+        {
+          "p_name": "HP Black Printer",
+          "p_coords": [51,366,302,306]
+        },
+        {
+          "p_name": "HP White Printer",
+          "p_coords": [378,364,302,306]
+        },
+        {
+          "p_name": "Asus Intel Core i5",
+          "p_coords": [1015,39,302,306]
+        },
+        {
+          "p_name": "Pen Drive",
+          "p_coords": [302,716,252,316]
+        },
+        {
+          "p_name": "DLink Router",
+          "p_coords": [1103,713,235,306]
+        },
+        {
+          "p_name": "Wireless Sound System",
+          "p_coords": [700,1042,328,306]
+        }
+      ]
+    },
+    {
+      "pageName": "4",
+      "page_Width": 400,
+      "page_Height": 566,
+      "products": [
+        {
+          "p_name": "Watermelone",
+          "p_coords": [40,180,95,150]
+        },
+        {
+          "p_name": "Cherry",
+          "p_coords": [152,180,95,150]
+        },
+        {
+          "p_name": "Banana",
+          "p_coords": [265,180,95,150]
+        },
+        {
+          "p_name": "Grapes",
+          "p_coords": [40,340,95,150]
+        },
+        {
+          "p_name": "Pinaapple",
+          "p_coords": [152,340,95,150]
+        },
+        {
+          "p_name": "Strawberries",
+          "p_coords": [265,340,95,150]
+        }
+      ]
+    }
+  ]
+}

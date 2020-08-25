@@ -10,23 +10,29 @@
 		5811190F24E136E700D86E48 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811190C24E136E700D86E48 /* Misc.swift */; };
 		5811191024E136E700D86E48 /* WritablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811190D24E136E700D86E48 /* WritablePage.swift */; };
 		5811191124E136E700D86E48 /* WritablePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811190E24E136E700D86E48 /* WritablePageView.swift */; };
+		58454DCA24F0E438006D5AE7 /* 6Pages.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58454DC924F0E438006D5AE7 /* 6Pages.pdf */; };
+		58454DD024F11D5B006D5AE7 /* ProductMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58454DCD24F11D5B006D5AE7 /* ProductMaster.swift */; };
+		58454DD124F11D5B006D5AE7 /* PdfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58454DCE24F11D5B006D5AE7 /* PdfPage.swift */; };
+		58454DD224F11D5B006D5AE7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58454DCF24F11D5B006D5AE7 /* Product.swift */; };
+		58454DD324F12EE1006D5AE7 /* 6Pages.json in Resources */ = {isa = PBXBuildFile; fileRef = 58454DCB24F100C9006D5AE7 /* 6Pages.json */; };
 		588CC00124DD1BA000102267 /* ProductDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588CC00024DD1BA000102267 /* ProductDM.swift */; };
+		5895594924F4F795007F2913 /* ThumbnailGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5895594824F4F795007F2913 /* ThumbnailGridViewController.swift */; };
+		5895594B24F4FA52007F2913 /* ThumbnailGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5895594A24F4FA52007F2913 /* ThumbnailGridCell.swift */; };
+		5895594D24F4FA5A007F2913 /* ThumbnailGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5895594C24F4FA5A007F2913 /* ThumbnailGridCell.xib */; };
 		58EC73A024E95CC4007BDC15 /* Cosmetic.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739824E95CC4007BDC15 /* Cosmetic.pdf */; };
 		58EC73A124E95CC4007BDC15 /* SuperMarket.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739924E95CC4007BDC15 /* SuperMarket.pdf */; };
 		58EC73A224E95CC4007BDC15 /* ElectricProduct.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739A24E95CC4007BDC15 /* ElectricProduct.pdf */; };
 		58EC73A324E95CC4007BDC15 /* DMart.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739B24E95CC4007BDC15 /* DMart.pdf */; };
-		58EC73A424E95CC4007BDC15 /* penha 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739C24E95CC4007BDC15 /* penha 2.pdf */; };
-		58EC73A524E95CC4007BDC15 /* SpanishFlyer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739D24E95CC4007BDC15 /* SpanishFlyer.pdf */; };
 		58EC73A624E95CC4007BDC15 /* penha 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739E24E95CC4007BDC15 /* penha 1.pdf */; };
-		58EC73A724E95CC4007BDC15 /* penha 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58EC739F24E95CC4007BDC15 /* penha 3.pdf */; };
 		58EC73B124E95CD2007BDC15 /* ElectronicProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73A924E95CD2007BDC15 /* ElectronicProducts.json */; };
-		58EC73B224E95CD2007BDC15 /* penha 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73AA24E95CD2007BDC15 /* penha 2.json */; };
-		58EC73B324E95CD2007BDC15 /* SpanishFlyer.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73AB24E95CD2007BDC15 /* SpanishFlyer.json */; };
-		58EC73B424E95CD2007BDC15 /* penha 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73AC24E95CD2007BDC15 /* penha 3.json */; };
 		58EC73B524E95CD2007BDC15 /* DMartProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73AD24E95CD2007BDC15 /* DMartProducts.json */; };
 		58EC73B624E95CD2007BDC15 /* SuperMarket.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73AE24E95CD2007BDC15 /* SuperMarket.json */; };
 		58EC73B724E95CD2007BDC15 /* penha 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73AF24E95CD2007BDC15 /* penha 1.json */; };
 		58EC73B824E95CD2007BDC15 /* Cosmetic.json in Resources */ = {isa = PBXBuildFile; fileRef = 58EC73B024E95CD2007BDC15 /* Cosmetic.json */; };
+		58F14E3D24F3D03F00659119 /* DMart1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58F14E3B24F3D03F00659119 /* DMart1.pdf */; };
+		58F14E4224F3D20800659119 /* DMart1.json in Resources */ = {isa = PBXBuildFile; fileRef = 58F14E3F24F3D04600659119 /* DMart1.json */; };
+		58F14E4624F3D94100659119 /* DifSize.json in Resources */ = {isa = PBXBuildFile; fileRef = 58F14E4524F3D93D00659119 /* DifSize.json */; };
+		58F14E4824F3D95300659119 /* DifSize.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58F14E4724F3D95200659119 /* DifSize.pdf */; };
 		58F1E2EE24DD44A1008B089D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F1E2ED24DD44A1008B089D /* ProductViewController.swift */; };
 		9C2C8A2A2FC8F62C51ADDAF4 /* Pods_PDFCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936E4CE7A32E679B7AE47838 /* Pods_PDFCart.framework */; };
 		B201939024A5D84700D4464A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201938F24A5D84700D4464A /* AppDelegate.swift */; };
@@ -48,23 +54,29 @@
 		5811190C24E136E700D86E48 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		5811190D24E136E700D86E48 /* WritablePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritablePage.swift; sourceTree = "<group>"; };
 		5811190E24E136E700D86E48 /* WritablePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritablePageView.swift; sourceTree = "<group>"; };
+		58454DC924F0E438006D5AE7 /* 6Pages.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 6Pages.pdf; sourceTree = "<group>"; };
+		58454DCB24F100C9006D5AE7 /* 6Pages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 6Pages.json; sourceTree = "<group>"; };
+		58454DCD24F11D5B006D5AE7 /* ProductMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductMaster.swift; sourceTree = "<group>"; };
+		58454DCE24F11D5B006D5AE7 /* PdfPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfPage.swift; sourceTree = "<group>"; };
+		58454DCF24F11D5B006D5AE7 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		588CC00024DD1BA000102267 /* ProductDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDM.swift; sourceTree = "<group>"; };
+		5895594824F4F795007F2913 /* ThumbnailGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailGridViewController.swift; sourceTree = "<group>"; };
+		5895594A24F4FA52007F2913 /* ThumbnailGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailGridCell.swift; sourceTree = "<group>"; };
+		5895594C24F4FA5A007F2913 /* ThumbnailGridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailGridCell.xib; sourceTree = "<group>"; };
 		58EC739824E95CC4007BDC15 /* Cosmetic.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Cosmetic.pdf; sourceTree = "<group>"; };
 		58EC739924E95CC4007BDC15 /* SuperMarket.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SuperMarket.pdf; sourceTree = "<group>"; };
 		58EC739A24E95CC4007BDC15 /* ElectricProduct.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ElectricProduct.pdf; sourceTree = "<group>"; };
 		58EC739B24E95CC4007BDC15 /* DMart.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DMart.pdf; sourceTree = "<group>"; };
-		58EC739C24E95CC4007BDC15 /* penha 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "penha 2.pdf"; sourceTree = "<group>"; };
-		58EC739D24E95CC4007BDC15 /* SpanishFlyer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SpanishFlyer.pdf; sourceTree = "<group>"; };
 		58EC739E24E95CC4007BDC15 /* penha 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "penha 1.pdf"; sourceTree = "<group>"; };
-		58EC739F24E95CC4007BDC15 /* penha 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "penha 3.pdf"; sourceTree = "<group>"; };
 		58EC73A924E95CD2007BDC15 /* ElectronicProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElectronicProducts.json; sourceTree = "<group>"; };
-		58EC73AA24E95CD2007BDC15 /* penha 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "penha 2.json"; sourceTree = "<group>"; };
-		58EC73AB24E95CD2007BDC15 /* SpanishFlyer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SpanishFlyer.json; sourceTree = "<group>"; };
-		58EC73AC24E95CD2007BDC15 /* penha 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "penha 3.json"; sourceTree = "<group>"; };
 		58EC73AD24E95CD2007BDC15 /* DMartProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DMartProducts.json; sourceTree = "<group>"; };
 		58EC73AE24E95CD2007BDC15 /* SuperMarket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuperMarket.json; sourceTree = "<group>"; };
 		58EC73AF24E95CD2007BDC15 /* penha 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "penha 1.json"; sourceTree = "<group>"; };
 		58EC73B024E95CD2007BDC15 /* Cosmetic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cosmetic.json; sourceTree = "<group>"; };
+		58F14E3B24F3D03F00659119 /* DMart1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DMart1.pdf; sourceTree = "<group>"; };
+		58F14E3F24F3D04600659119 /* DMart1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DMart1.json; sourceTree = "<group>"; };
+		58F14E4524F3D93D00659119 /* DifSize.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DifSize.json; sourceTree = "<group>"; };
+		58F14E4724F3D95200659119 /* DifSize.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DifSize.pdf; sourceTree = "<group>"; };
 		58F1E2ED24DD44A1008B089D /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		936E4CE7A32E679B7AE47838 /* Pods_PDFCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B201938C24A5D84700D4464A /* PDFCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,17 +120,27 @@
 			path = Drawing;
 			sourceTree = "<group>";
 		};
+		58454DCC24F11D5B006D5AE7 /* PDFCartModel */ = {
+			isa = PBXGroup;
+			children = (
+				58454DCD24F11D5B006D5AE7 /* ProductMaster.swift */,
+				58454DCE24F11D5B006D5AE7 /* PdfPage.swift */,
+				58454DCF24F11D5B006D5AE7 /* Product.swift */,
+			);
+			path = PDFCartModel;
+			sourceTree = "<group>";
+		};
 		58EC73A824E95CD2007BDC15 /* JSONData */ = {
 			isa = PBXGroup;
 			children = (
 				58EC73A924E95CD2007BDC15 /* ElectronicProducts.json */,
-				58EC73AA24E95CD2007BDC15 /* penha 2.json */,
-				58EC73AB24E95CD2007BDC15 /* SpanishFlyer.json */,
-				58EC73AC24E95CD2007BDC15 /* penha 3.json */,
 				58EC73AD24E95CD2007BDC15 /* DMartProducts.json */,
 				58EC73AE24E95CD2007BDC15 /* SuperMarket.json */,
 				58EC73AF24E95CD2007BDC15 /* penha 1.json */,
+				58454DCB24F100C9006D5AE7 /* 6Pages.json */,
 				58EC73B024E95CD2007BDC15 /* Cosmetic.json */,
+				58F14E4524F3D93D00659119 /* DifSize.json */,
+				58F14E3F24F3D04600659119 /* DMart1.json */,
 			);
 			path = JSONData;
 			sourceTree = "<group>";
@@ -152,14 +174,18 @@
 		B201938E24A5D84700D4464A /* PDFCart */ = {
 			isa = PBXGroup;
 			children = (
-				58EC73A824E95CD2007BDC15 /* JSONData */,
 				B20193A624A5E20F00D4464A /* Annotations */,
 				B201938F24A5D84700D4464A /* AppDelegate.swift */,
 				B201939124A5D84700D4464A /* SceneDelegate.swift */,
 				B201939324A5D84700D4464A /* ViewController.swift */,
 				58F1E2ED24DD44A1008B089D /* ProductViewController.swift */,
 				588CC00024DD1BA000102267 /* ProductDM.swift */,
+				5895594824F4F795007F2913 /* ThumbnailGridViewController.swift */,
+				5895594C24F4FA5A007F2913 /* ThumbnailGridCell.xib */,
+				5895594A24F4FA52007F2913 /* ThumbnailGridCell.swift */,
+				58454DCC24F11D5B006D5AE7 /* PDFCartModel */,
 				B20193A324A5D8F800D4464A /* PDFs */,
+				58EC73A824E95CD2007BDC15 /* JSONData */,
 				B201939524A5D84700D4464A /* Main.storyboard */,
 				B201939824A5D84C00D4464A /* Assets.xcassets */,
 				B201939A24A5D84C00D4464A /* LaunchScreen.storyboard */,
@@ -171,14 +197,14 @@
 		B20193A324A5D8F800D4464A /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
+				58F14E4724F3D95200659119 /* DifSize.pdf */,
+				58454DC924F0E438006D5AE7 /* 6Pages.pdf */,
 				58EC739824E95CC4007BDC15 /* Cosmetic.pdf */,
 				58EC739B24E95CC4007BDC15 /* DMart.pdf */,
 				58EC739A24E95CC4007BDC15 /* ElectricProduct.pdf */,
 				58EC739E24E95CC4007BDC15 /* penha 1.pdf */,
-				58EC739C24E95CC4007BDC15 /* penha 2.pdf */,
-				58EC739F24E95CC4007BDC15 /* penha 3.pdf */,
-				58EC739D24E95CC4007BDC15 /* SpanishFlyer.pdf */,
 				58EC739924E95CC4007BDC15 /* SuperMarket.pdf */,
+				58F14E3B24F3D03F00659119 /* DMart1.pdf */,
 			);
 			path = PDFs;
 			sourceTree = "<group>";
@@ -260,24 +286,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58EC73A524E95CC4007BDC15 /* SpanishFlyer.pdf in Resources */,
+				5895594D24F4FA5A007F2913 /* ThumbnailGridCell.xib in Resources */,
 				58EC73A324E95CC4007BDC15 /* DMart.pdf in Resources */,
-				58EC73A424E95CC4007BDC15 /* penha 2.pdf in Resources */,
 				58EC73B824E95CD2007BDC15 /* Cosmetic.json in Resources */,
-				58EC73B324E95CD2007BDC15 /* SpanishFlyer.json in Resources */,
+				58454DD324F12EE1006D5AE7 /* 6Pages.json in Resources */,
 				B201939C24A5D84C00D4464A /* LaunchScreen.storyboard in Resources */,
 				58EC73A224E95CC4007BDC15 /* ElectricProduct.pdf in Resources */,
 				58EC73B524E95CD2007BDC15 /* DMartProducts.json in Resources */,
 				58EC73B724E95CD2007BDC15 /* penha 1.json in Resources */,
-				58EC73B224E95CD2007BDC15 /* penha 2.json in Resources */,
-				58EC73B424E95CD2007BDC15 /* penha 3.json in Resources */,
+				58454DCA24F0E438006D5AE7 /* 6Pages.pdf in Resources */,
 				B201939924A5D84C00D4464A /* Assets.xcassets in Resources */,
 				58EC73A624E95CC4007BDC15 /* penha 1.pdf in Resources */,
+				58F14E4224F3D20800659119 /* DMart1.json in Resources */,
 				58EC73B124E95CD2007BDC15 /* ElectronicProducts.json in Resources */,
+				58F14E3D24F3D03F00659119 /* DMart1.pdf in Resources */,
 				58EC73A124E95CC4007BDC15 /* SuperMarket.pdf in Resources */,
 				58EC73B624E95CD2007BDC15 /* SuperMarket.json in Resources */,
-				58EC73A724E95CC4007BDC15 /* penha 3.pdf in Resources */,
 				B201939724A5D84700D4464A /* Main.storyboard in Resources */,
+				58F14E4824F3D95300659119 /* DifSize.pdf in Resources */,
+				58F14E4624F3D94100659119 /* DifSize.json in Resources */,
 				58EC73A024E95CC4007BDC15 /* Cosmetic.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,9 +358,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58454DD024F11D5B006D5AE7 /* ProductMaster.swift in Sources */,
+				5895594B24F4FA52007F2913 /* ThumbnailGridCell.swift in Sources */,
 				588CC00124DD1BA000102267 /* ProductDM.swift in Sources */,
 				5811191024E136E700D86E48 /* WritablePage.swift in Sources */,
+				5895594924F4F795007F2913 /* ThumbnailGridViewController.swift in Sources */,
+				58454DD124F11D5B006D5AE7 /* PdfPage.swift in Sources */,
 				B201939424A5D84700D4464A /* ViewController.swift in Sources */,
+				58454DD224F11D5B006D5AE7 /* Product.swift in Sources */,
 				5811191124E136E700D86E48 /* WritablePageView.swift in Sources */,
 				B201939024A5D84700D4464A /* AppDelegate.swift in Sources */,
 				5811190F24E136E700D86E48 /* Misc.swift in Sources */,

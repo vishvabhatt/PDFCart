@@ -1,20 +1,24 @@
 PODS:
+  - AppBoxSDK (1.0.0)
   - FTPopOverMenu_Swift (0.1.4)
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - AppBoxSDK
   - FTPopOverMenu_Swift (~> 0.1.4)
   - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
+    - AppBoxSDK
     - FTPopOverMenu_Swift
     - Toast-Swift
 
 SPEC CHECKSUMS:
+  AppBoxSDK: ae11eb4f6006022b5b3b9471dc3691b931cd61a6
   FTPopOverMenu_Swift: e4cafd1085d8125339c710fa9e53477fd615b1e2
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 48f56a7fcec38c3ece4264950c28c0c3df6889d0
+PODFILE CHECKSUM: 16fdb0ced5ad51a155dea42cb69bff366a95da03
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

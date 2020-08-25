@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-PDFCart/Pods-PDFCart-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AppBoxSDK/AppBoxSDK.framework
 ${BUILT_PRODUCTS_DIR}/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework
 ${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework

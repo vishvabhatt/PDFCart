@@ -1,0 +1,131 @@
+{
+  "totalPages": 6,
+  "pdfPages": [
+    {
+      "pageName": "1",
+      "page_Width": 400,
+      "page_Height": 1048,
+      "products": [
+        {
+          "p_name": "Jello",
+          "p_coords": [14, 208,124,159]
+        },
+        {
+          "p_name": "Plamolive Dish Washer",
+          "p_coords": [15, 874,85,149]
+        },
+        {
+          "p_name": "Fabric Softer",
+          "p_coords": [204, 712,85,149]
+        }
+      ]
+    },
+    {
+      "pageName": "2",
+      "page_Width": 400,
+      "page_Height": 1052,
+      "products": [
+        {
+          "p_name": "Tostito Chips",
+          "p_coords": [137,374,119,155]
+        },
+        {
+          "p_name": "KD",
+          "p_coords": [15,540,185,155]
+        },
+        {
+          "p_name": "Goldfish Crackers",
+          "p_coords": [13,867,185,155]
+        },
+        {
+          "p_name": "Frosen Parlor Tub",
+          "p_coords": [13,48,185,155]
+        }
+      ]
+    },
+    {
+      "pageName": "3",
+      "page_Width": 400,
+      "page_Height": 1048,
+      "products": [
+        {
+          "p_name": "Nescafe",
+          "p_coords": [207,561,182,132]
+        },
+        {
+          "p_name": "Nutri Grain",
+          "p_coords": [10,691,126,132]
+        },
+        {
+          "p_name": "Olive Oil",
+          "p_coords": [200,125,189,119]
+        }
+      ]
+    },
+    {
+      "pageName": "4",
+      "page_Width": 400,
+      "page_Height": 1044,
+      "products": [
+        {
+          "p_name": "Apples",
+          "p_coords": [13,216,124,132]
+        },
+        {
+          "p_name": "Green Pappers",
+          "p_coords": [137,211,124,132]
+        },
+        {
+          "p_name": "Pepperoni",
+          "p_coords": [10,660,124,132]
+        },
+        {
+          "p_name": "Pizza",
+          "p_coords": [262,660,124,132]
+        },
+        {
+          "p_name": "Local Corn",
+          "p_coords": [9,39,127,160]
+        }
+      ]
+    },
+    {
+      "pageName": "5",
+      "page_Width": 400,
+      "page_Height": 1025,
+      "products": [
+        {
+          "p_name": "Hoodies",
+          "p_coords": [21,63,110,178]
+        },
+        {
+          "p_name": "Spiderman lunchbox and backpack set",
+          "p_coords": [167,145,97,101]
+        },
+        {
+          "p_name": "Black backpack",
+          "p_coords": [209,556,71,90]
+        }
+      ]
+    },
+    {
+      "pageName": "6",
+      "page_Width": 400,
+      "page_Height": 1048,
+      "products": [
+        {
+          "p_name": "Fresh Meat",
+          "p_coords": [28,327,353,190]
+        },
+        {
+          "p_name": "Logo Nano Drinkable Yogurt",
+          "p_coords": [21,538,175,204]
+        },
+        {
+          "p_name": "Crayola Crayons",
+          "p_coords": [147,763,111,204]
+        }
+      ]
+    }
+  ]
+}

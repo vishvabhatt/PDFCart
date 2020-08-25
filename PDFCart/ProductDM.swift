@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct ProductMaster {
+/*struct ProductMaster {
     var pdfHeight : CGFloat = CGFloat.zero
     var pdfWidth : CGFloat = CGFloat.zero
     var arrayProducts : [ProductDM] = []
@@ -43,3 +43,4 @@ struct ProductDM {
         }
     }
 }
+*/

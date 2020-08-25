@@ -7,36 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0193AFA5288AFD2B2D4B45856EC5AF61 /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 459A8B61DC7EA5435E3D88CB5E856EDB /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D6CDF752BA20D52B210E17C19F3DD7A /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3368D7B464F206BB74BF047D13A3C0D /* FTPopOverMenu_Swift-dummy.m */; };
-		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A267FBCCED9048CE654D7D3C378BDD73 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		283F4D585A1C87CBEE6150D31DE22F26 /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74AB2191EA46BD1E3A876CE6E05C6D /* UIControl+Point.swift */; };
-		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D2A4F6841D054A77D3C3DCA2BC413 /* Toast.swift */; };
-		4ED4CC550C71968819EE5E0B53F8274D /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997B9B7E92B83870ED3A64DD892A202 /* FTPopOverMenuCell.swift */; };
-		609E752273EADB1F208830DDEE950826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08816D434B7E5A8F299E0C8B55C7B8E8 /* Toast-Swift-dummy.m */; };
-		770C91285C1A9E698EBB50E103820FB3 /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD281C59F8510BE249F9B51BC866A93C /* FTConfiguration.swift */; };
-		7C43739BF1581DE5DF35A1FA8D68FEB2 /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF450A500053DFACC426E70B9E9A1D /* FTPopOverMenu.swift */; };
+		008C4E3039D51EB5D46814D6B6DA90A8 /* AppBoxSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668D229E274FB411A22BE65F7109FBD /* AppBoxSDK-dummy.m */; };
+		0193AFA5288AFD2B2D4B45856EC5AF61 /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74105E66D1750F1D1A61B2CDA581401D /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0533F68A4D3EA5258C5C2C81F7D0E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		0D6CDF752BA20D52B210E17C19F3DD7A /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4730FF26A424910F73507D092E220A37 /* FTPopOverMenu_Swift-dummy.m */; };
+		1B6B3501CEE464968C18C1D4C8B2B62D /* UpdateAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EF8EF6E3A6E8CF6A8C99180B52ABC /* UpdateAlertController.swift */; };
+		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D29FFA0B00809DE83FF2FAD53AE146E0 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		283F4D585A1C87CBEE6150D31DE22F26 /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD151B4E3C46F9228454690E1E720727 /* UIControl+Point.swift */; };
+		43A0D9DD95D068C0AF9DEC3986E57125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		43C092BFE757137DE24278B1EC3D2856 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E941CE43610034B0D4272B5A21D8CAE /* UserDefaultExtension.swift */; };
+		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233839179C5BC77ECF570B070EDB6CF /* Toast.swift */; };
+		4ED4CC550C71968819EE5E0B53F8274D /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE94C5F637D6BAF987BAB79D4C177EDB /* FTPopOverMenuCell.swift */; };
+		5638905AF5F77707C6F564580ACD6C4E /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62C93647CFEA0CF5E13C6B4B1B8EEB /* AppInfo.swift */; };
+		63E0C98B8C8E3091FFEF38D4A0575603 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD92BF5816508716B14AB372CF5F7F70 /* DataParser.swift */; };
+		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 767F34DE503219A305555DBF3B3BC875 /* Toast-Swift-dummy.m */; };
+		6F18348B41BAB7DC9F8FF8FF817A2373 /* AppBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5661288D0872B8EA401934E8797C9C /* AppBox.swift */; };
+		770C91285C1A9E698EBB50E103820FB3 /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDB08639EAD06812B799EEC83CEA8EB /* FTConfiguration.swift */; };
+		7C43739BF1581DE5DF35A1FA8D68FEB2 /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A11EE50DB380DA162F0D33DC7705AC /* FTPopOverMenu.swift */; };
 		849E1441D4DCBFD826F77ABEA94EF6D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		879EDA64F39CD8AD0E34A4DC87972093 /* Pods-PDFCart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1E44C00E49C9F076549F55E54DA09F /* Pods-PDFCart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BAE8067D660BDDFF39E46971DB65CAF /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C0DF08423C08BB5808434709143C8 /* FT+Extension.swift */; };
+		8BAE8067D660BDDFF39E46971DB65CAF /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAD0A497AB0E77D1208772376866E1 /* FT+Extension.swift */; };
+		8DA563EB7DCBF4795EB4ABC11B5E2422 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33237EB1FE2471E8331152DA9DDA8FAC /* Enums.swift */; };
+		8DBE46777702EFC31D89846EF7E8FAB5 /* AppBoxSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C08AF1E388E2A7A7FD884B09989DDD /* AppBoxSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93B69C97E86A2EC189181A40A5D34FBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A62EDF7037E2E340B36FBDDC7F7B2F /* Constants.swift */; };
 		95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
-		9CBE10436E0D6E1DFF0BFE480C6256CC /* Pods-PDFCart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 196D28430BB007FC4ED400EB8528AABB /* Pods-PDFCart-dummy.m */; };
+		A9BBA0B9FFAAFE770FE27737F67A95A0 /* AppBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E838CC140B32E61E73F31F847281AF /* AppBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B866C9008AF3877205B34E331E535C4B /* Pods-PDFCart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1E44C00E49C9F076549F55E54DA09F /* Pods-PDFCart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B87D4CF37AED98B6503908091FC96247 /* UpdateWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C26A971A827C8EC190B5748D3042D /* UpdateWindow.swift */; };
 		C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
-		C88DBCF1B7743A12A1073A6B5DD056A7 /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E747B6133A7004E99C305125747DC33E /* FTCellConfiguration.swift */; };
-		CFEBCF3F8EA3072C9EDCF777050EFEAA /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F4CEAC8F54371309A0C9D4A247134 /* UIScreen+Frame.swift */; };
-		D1EEA64F0B5BBB58A6F598B0E783CA4B /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36804D0AC3DA18A3DF1A99D6CC55289E /* FTConstants.swift */; };
+		C3448E1B63AFF1516FC848C39DDF0D0E /* AppInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762138D6EE055F51632813B49A41C9 /* AppInfoService.swift */; };
+		C88DBCF1B7743A12A1073A6B5DD056A7 /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD65A305CB88ADD723618F8384092E7 /* FTCellConfiguration.swift */; };
+		CFEBCF3F8EA3072C9EDCF777050EFEAA /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE31184FCD87D5001CBE9506AF4DCB /* UIScreen+Frame.swift */; };
+		D1EEA64F0B5BBB58A6F598B0E783CA4B /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C831FBAF1229ABBE8BDA502BC49AF4F /* FTConstants.swift */; };
+		D4C1BBEA0EDF248859AEB441B18EBD82 /* Pods-PDFCart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 196D28430BB007FC4ED400EB8528AABB /* Pods-PDFCart-dummy.m */; };
+		DCE0C1A5963AC1926CCCBBB89AEEFCB2 /* ABLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E57D2640E0BDF2F047327073E84B8 /* ABLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		202ABB2DA22F32F17F8E405254D5DF2D /* PBXContainerItemProxy */ = {
+		10888E3ED3C6169855F33D74EC3D465B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
 			remoteInfo = "Toast-Swift";
 		};
-		9F2FA0A1443BA28BA59294F695911007 /* PBXContainerItemProxy */ = {
+		3A37AA6533DCFD6079B604B3B13AAB8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79ABA9B00602F6679641C350D48CA14D;
+			remoteInfo = AppBoxSDK;
+		};
+		98E84DDBDCC04513B053BDB871F980B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -46,45 +67,82 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03CF450A500053DFACC426E70B9E9A1D /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
-		04A390BF262AA31E64665DC2C4941FE8 /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
+		02E838CC140B32E61E73F31F847281AF /* AppBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppBox.h; path = AppBox/AppBox/AppBox.h; sourceTree = "<group>"; };
+		0668D229E274FB411A22BE65F7109FBD /* AppBoxSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppBoxSDK-dummy.m"; sourceTree = "<group>"; };
 		06BC5746EA5990B5D98255FF04C996D3 /* Pods-PDFCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDFCart.debug.xcconfig"; sourceTree = "<group>"; };
-		08816D434B7E5A8F299E0C8B55C7B8E8 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
-		1823166939A5AB8AED2A759E13200938 /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		0C831FBAF1229ABBE8BDA502BC49AF4F /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
+		0FDB08639EAD06812B799EEC83CEA8EB /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
+		1417F305584ABC0EE3E33749A6DBA6BD /* AppBoxSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AppBoxSDK-Info.plist"; sourceTree = "<group>"; };
+		159AC3B5A4167F0DAD353D4DA33EFACE /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
 		196D28430BB007FC4ED400EB8528AABB /* Pods-PDFCart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDFCart-dummy.m"; sourceTree = "<group>"; };
+		25BEA42BC7EF8528842C64176839E889 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
 		2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTPopOverMenu_Swift.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		298F4CEAC8F54371309A0C9D4A247134 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
-		36804D0AC3DA18A3DF1A99D6CC55289E /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
-		3997B9B7E92B83870ED3A64DD892A202 /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
-		3D74AB2191EA46BD1E3A876CE6E05C6D /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
+		3233839179C5BC77ECF570B070EDB6CF /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		33237EB1FE2471E8331152DA9DDA8FAC /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = AppBox/AppBox/Constants/Enums.swift; sourceTree = "<group>"; };
 		41C03681383B237C2B95E5CFA2E00D92 /* Pods-PDFCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDFCart.release.xcconfig"; sourceTree = "<group>"; };
 		43D105F8ECD92BEFBCB0EA83BA3F76C2 /* Pods-PDFCart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDFCart-Info.plist"; sourceTree = "<group>"; };
-		459A8B61DC7EA5435E3D88CB5E856EDB /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
-		66572A9EFEF287AD4CB1A0D646FA6357 /* FTPopOverMenu_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.xcconfig; sourceTree = "<group>"; };
-		6814CFE9E00D819A3A6F4F648E899FF8 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		4730FF26A424910F73507D092E220A37 /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
+		4DDAD0A497AB0E77D1208772376866E1 /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
+		56A62EDF7037E2E340B36FBDDC7F7B2F /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = AppBox/AppBox/Constants/Constants.swift; sourceTree = "<group>"; };
+		5C5661288D0872B8EA401934E8797C9C /* AppBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppBox.swift; path = AppBox/AppBox/AppBox.swift; sourceTree = "<group>"; };
+		62C08AF1E388E2A7A7FD884B09989DDD /* AppBoxSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppBoxSDK-umbrella.h"; sourceTree = "<group>"; };
+		66C83654E9C6318CACE82FA345B3F149 /* AppBoxSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppBoxSDK.modulemap; sourceTree = "<group>"; };
+		67DE31184FCD87D5001CBE9506AF4DCB /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
+		71A11EE50DB380DA162F0D33DC7705AC /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
+		73338151ADF19945994D9B69AE0C35B4 /* AppBoxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppBoxSDK.framework; path = AppBoxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74105E66D1750F1D1A61B2CDA581401D /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
+		767F34DE503219A305555DBF3B3BC875 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
 		7CD651651A1A6C419FE65E96C39FB69D /* Pods-PDFCart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDFCart-acknowledgements.plist"; sourceTree = "<group>"; };
+		7F3E680165FD28EC3C8D796EE4934360 /* AppBoxSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppBoxSDK-prefix.pch"; sourceTree = "<group>"; };
+		84762138D6EE055F51632813B49A41C9 /* AppInfoService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppInfoService.swift; path = AppBox/AppBox/Services/AppInfoService.swift; sourceTree = "<group>"; };
+		866D18FC9EB4EEF645361C26916CA294 /* AppBoxSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppBoxSDK.debug.xcconfig; sourceTree = "<group>"; };
+		86C42ADB7C9751E6857C1792D81754D9 /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		8E941CE43610034B0D4272B5A21D8CAE /* UserDefaultExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultExtension.swift; path = AppBox/AppBox/Extensions/UserDefaultExtension.swift; sourceTree = "<group>"; };
+		913C26A971A827C8EC190B5748D3042D /* UpdateWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateWindow.swift; path = AppBox/AppBox/ViewControllers/UpdateWindow.swift; sourceTree = "<group>"; };
 		916022798EDC13959E4C8A2A071331E1 /* Pods-PDFCart-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PDFCart-frameworks.sh"; sourceTree = "<group>"; };
+		923440CC20AC065DCD0FC46A672B683F /* FTPopOverMenu_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A267FBCCED9048CE654D7D3C378BDD73 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
-		AE84F67A149C5608A282480BA106ED49 /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
 		AF6AB79D80F36F9AA78625D7A37F3839 /* Pods_PDFCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PDFCart.framework; path = "Pods-PDFCart.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF703EFC0EA2972E1C8BBB4FBAED5E29 /* Toast-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		B1C2E26B443DFE15BE3A80F35A93918B /* Pods-PDFCart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PDFCart-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B3368D7B464F206BB74BF047D13A3C0D /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
+		B65E57D2640E0BDF2F047327073E84B8 /* ABLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ABLog.swift; path = AppBox/AppBox/Utilities/ABLog.swift; sourceTree = "<group>"; };
+		B801716A326EB20AF8CEC3770452500C /* AppBoxSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppBoxSDK.release.xcconfig; sourceTree = "<group>"; };
 		BA1E44C00E49C9F076549F55E54DA09F /* Pods-PDFCart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PDFCart-umbrella.h"; sourceTree = "<group>"; };
+		BD92BF5816508716B14AB372CF5F7F70 /* DataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataParser.swift; path = AppBox/AppBox/Utilities/DataParser.swift; sourceTree = "<group>"; };
+		C2CC81D605EEFA6628C2691FF250F6DF /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
 		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D08C88C0B2598DE4506EE80A77128EBB /* Pods-PDFCart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PDFCart.modulemap"; sourceTree = "<group>"; };
-		D56837B86B76B69EDB8AF82533E21EB9 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		D29FFA0B00809DE83FF2FAD53AE146E0 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
 		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8E33323215AA69471D2E5794FA6C68E /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
-		E747B6133A7004E99C305125747DC33E /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
+		DD151B4E3C46F9228454690E1E720727 /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
+		DD4EF8EF6E3A6E8CF6A8C99180B52ABC /* UpdateAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateAlertController.swift; path = AppBox/AppBox/ViewControllers/UpdateAlertController.swift; sourceTree = "<group>"; };
+		DFD65A305CB88ADD723618F8384092E7 /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
 		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ED7D2A4F6841D054A77D3C3DCA2BC413 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
-		EDBF92E1BA27FD3327195377B4EDA032 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
-		F42C0DF08423C08BB5808434709143C8 /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
-		FD281C59F8510BE249F9B51BC866A93C /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
+		EE94C5F637D6BAF987BAB79D4C177EDB /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
+		EF5E60F220BF5031AB88DDD919F94AE7 /* Toast-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		F8DFC261483B46A4CAB3B2D605E1B6B0 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		FA62C93647CFEA0CF5E13C6B4B1B8EEB /* AppInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppInfo.swift; path = AppBox/AppBox/Models/AppInfo.swift; sourceTree = "<group>"; };
+		FBAA7A1A3CE773D96167A7E085928762 /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
+		FCBAE72F969F0014B7895956C4828872 /* FTPopOverMenu_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D05D04C8B986233DDC55E9F0D1FC79A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0533F68A4D3EA5258C5C2C81F7D0E495 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E805927BADE56731E5367278ADDA03C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A0D9DD95D068C0AF9DEC3986E57125 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6102CF7EA55F5A7D669F88BF0D1A701F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,14 +160,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C39CB4689E8CAC1C237DC56C1AD53FE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				609E752273EADB1F208830DDEE950826 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,27 +171,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		26B6943CE7A169344D7D7D2A5BE42D01 /* Support Files */ = {
+		1EE28035E4265D1123279720D8FA5513 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D56837B86B76B69EDB8AF82533E21EB9 /* Toast-Swift.modulemap */,
-				EDBF92E1BA27FD3327195377B4EDA032 /* Toast-Swift.xcconfig */,
-				08816D434B7E5A8F299E0C8B55C7B8E8 /* Toast-Swift-dummy.m */,
-				1823166939A5AB8AED2A759E13200938 /* Toast-Swift-Info.plist */,
-				6814CFE9E00D819A3A6F4F648E899FF8 /* Toast-Swift-prefix.pch */,
-				A267FBCCED9048CE654D7D3C378BDD73 /* Toast-Swift-umbrella.h */,
+				25BEA42BC7EF8528842C64176839E889 /* Toast-Swift.modulemap */,
+				767F34DE503219A305555DBF3B3BC875 /* Toast-Swift-dummy.m */,
+				86C42ADB7C9751E6857C1792D81754D9 /* Toast-Swift-Info.plist */,
+				F8DFC261483B46A4CAB3B2D605E1B6B0 /* Toast-Swift-prefix.pch */,
+				D29FFA0B00809DE83FF2FAD53AE146E0 /* Toast-Swift-umbrella.h */,
+				EF5E60F220BF5031AB88DDD919F94AE7 /* Toast-Swift.debug.xcconfig */,
+				AF703EFC0EA2972E1C8BBB4FBAED5E29 /* Toast-Swift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Toast-Swift";
-			sourceTree = "<group>";
-		};
-		452A9369245C66B9FA63166652031EFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				813117DDA8FED1C0A47B2D11D2562C50 /* FTPopOverMenu_Swift */,
-				9C67909DBF6575F2F5ACE54E76F500F0 /* Toast-Swift */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		65D336F93479EE2E3CC6F23F469983E5 /* Pods-PDFCart */ = {
@@ -178,9 +220,80 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		809EA6D9C3B92130993AB21CDB2FCAB2 /* Products */ = {
+		6CBDEA6994464D55651AD6A5E26095D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				C66F09784D572392BA011F30BAD13E3E /* AppBoxSDK */,
+				E2C8BD2A07E1A684616F95C8287182E1 /* FTPopOverMenu_Swift */,
+				C0088B3AE7C3A1F49D1A6B9E5C0B0FC5 /* Toast-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D80CC93F55930DE1E54610C9586614D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				159AC3B5A4167F0DAD353D4DA33EFACE /* FTPopOverMenu_Swift.modulemap */,
+				4730FF26A424910F73507D092E220A37 /* FTPopOverMenu_Swift-dummy.m */,
+				FBAA7A1A3CE773D96167A7E085928762 /* FTPopOverMenu_Swift-Info.plist */,
+				C2CC81D605EEFA6628C2691FF250F6DF /* FTPopOverMenu_Swift-prefix.pch */,
+				74105E66D1750F1D1A61B2CDA581401D /* FTPopOverMenu_Swift-umbrella.h */,
+				FCBAE72F969F0014B7895956C4828872 /* FTPopOverMenu_Swift.debug.xcconfig */,
+				923440CC20AC065DCD0FC46A672B683F /* FTPopOverMenu_Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FTPopOverMenu_Swift";
+			sourceTree = "<group>";
+		};
+		BBF623F02A56478A48997F02FD26719C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66C83654E9C6318CACE82FA345B3F149 /* AppBoxSDK.modulemap */,
+				0668D229E274FB411A22BE65F7109FBD /* AppBoxSDK-dummy.m */,
+				1417F305584ABC0EE3E33749A6DBA6BD /* AppBoxSDK-Info.plist */,
+				7F3E680165FD28EC3C8D796EE4934360 /* AppBoxSDK-prefix.pch */,
+				62C08AF1E388E2A7A7FD884B09989DDD /* AppBoxSDK-umbrella.h */,
+				866D18FC9EB4EEF645361C26916CA294 /* AppBoxSDK.debug.xcconfig */,
+				B801716A326EB20AF8CEC3770452500C /* AppBoxSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppBoxSDK";
+			sourceTree = "<group>";
+		};
+		C0088B3AE7C3A1F49D1A6B9E5C0B0FC5 /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3233839179C5BC77ECF570B070EDB6CF /* Toast.swift */,
+				1EE28035E4265D1123279720D8FA5513 /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		C66F09784D572392BA011F30BAD13E3E /* AppBoxSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B65E57D2640E0BDF2F047327073E84B8 /* ABLog.swift */,
+				02E838CC140B32E61E73F31F847281AF /* AppBox.h */,
+				5C5661288D0872B8EA401934E8797C9C /* AppBox.swift */,
+				FA62C93647CFEA0CF5E13C6B4B1B8EEB /* AppInfo.swift */,
+				84762138D6EE055F51632813B49A41C9 /* AppInfoService.swift */,
+				56A62EDF7037E2E340B36FBDDC7F7B2F /* Constants.swift */,
+				BD92BF5816508716B14AB372CF5F7F70 /* DataParser.swift */,
+				33237EB1FE2471E8331152DA9DDA8FAC /* Enums.swift */,
+				DD4EF8EF6E3A6E8CF6A8C99180B52ABC /* UpdateAlertController.swift */,
+				913C26A971A827C8EC190B5748D3042D /* UpdateWindow.swift */,
+				8E941CE43610034B0D4272B5A21D8CAE /* UserDefaultExtension.swift */,
+				BBF623F02A56478A48997F02FD26719C /* Support Files */,
+			);
+			name = AppBoxSDK;
+			path = AppBoxSDK;
+			sourceTree = "<group>";
+		};
+		CEA3E9C1BA48EBBE8C0763ACE50D8E47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73338151ADF19945994D9B69AE0C35B4 /* AppBoxSDK.framework */,
 				2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */,
 				AF6AB79D80F36F9AA78625D7A37F3839 /* Pods_PDFCart.framework */,
 				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
@@ -188,56 +301,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		813117DDA8FED1C0A47B2D11D2562C50 /* FTPopOverMenu_Swift */ = {
-			isa = PBXGroup;
-			children = (
-				F42C0DF08423C08BB5808434709143C8 /* FT+Extension.swift */,
-				E747B6133A7004E99C305125747DC33E /* FTCellConfiguration.swift */,
-				FD281C59F8510BE249F9B51BC866A93C /* FTConfiguration.swift */,
-				36804D0AC3DA18A3DF1A99D6CC55289E /* FTConstants.swift */,
-				03CF450A500053DFACC426E70B9E9A1D /* FTPopOverMenu.swift */,
-				3997B9B7E92B83870ED3A64DD892A202 /* FTPopOverMenuCell.swift */,
-				3D74AB2191EA46BD1E3A876CE6E05C6D /* UIControl+Point.swift */,
-				298F4CEAC8F54371309A0C9D4A247134 /* UIScreen+Frame.swift */,
-				91FFAE9F8A108BB22AB120AC215A11AB /* Support Files */,
-			);
-			name = FTPopOverMenu_Swift;
-			path = FTPopOverMenu_Swift;
-			sourceTree = "<group>";
-		};
-		91FFAE9F8A108BB22AB120AC215A11AB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D8E33323215AA69471D2E5794FA6C68E /* FTPopOverMenu_Swift.modulemap */,
-				66572A9EFEF287AD4CB1A0D646FA6357 /* FTPopOverMenu_Swift.xcconfig */,
-				B3368D7B464F206BB74BF047D13A3C0D /* FTPopOverMenu_Swift-dummy.m */,
-				AE84F67A149C5608A282480BA106ED49 /* FTPopOverMenu_Swift-Info.plist */,
-				04A390BF262AA31E64665DC2C4941FE8 /* FTPopOverMenu_Swift-prefix.pch */,
-				459A8B61DC7EA5435E3D88CB5E856EDB /* FTPopOverMenu_Swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FTPopOverMenu_Swift";
-			sourceTree = "<group>";
-		};
-		9C67909DBF6575F2F5ACE54E76F500F0 /* Toast-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				ED7D2A4F6841D054A77D3C3DCA2BC413 /* Toast.swift */,
-				26B6943CE7A169344D7D7D2A5BE42D01 /* Support Files */,
-			);
-			name = "Toast-Swift";
-			path = "Toast-Swift";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				452A9369245C66B9FA63166652031EFB /* Pods */,
-				809EA6D9C3B92130993AB21CDB2FCAB2 /* Products */,
+				6CBDEA6994464D55651AD6A5E26095D9 /* Pods */,
+				CEA3E9C1BA48EBBE8C0763ACE50D8E47 /* Products */,
 				68241AB56A2658FB7068D4A0007BB4E8 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		E2C8BD2A07E1A684616F95C8287182E1 /* FTPopOverMenu_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAD0A497AB0E77D1208772376866E1 /* FT+Extension.swift */,
+				DFD65A305CB88ADD723618F8384092E7 /* FTCellConfiguration.swift */,
+				0FDB08639EAD06812B799EEC83CEA8EB /* FTConfiguration.swift */,
+				0C831FBAF1229ABBE8BDA502BC49AF4F /* FTConstants.swift */,
+				71A11EE50DB380DA162F0D33DC7705AC /* FTPopOverMenu.swift */,
+				EE94C5F637D6BAF987BAB79D4C177EDB /* FTPopOverMenuCell.swift */,
+				DD151B4E3C46F9228454690E1E720727 /* UIControl+Point.swift */,
+				67DE31184FCD87D5001CBE9506AF4DCB /* UIScreen+Frame.swift */,
+				6D80CC93F55930DE1E54610C9586614D /* Support Files */,
+			);
+			name = FTPopOverMenu_Swift;
+			path = FTPopOverMenu_Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +340,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		664A5CEF5F82FD2C234DB6F649443FAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9BBA0B9FFAAFE770FE27737F67A95A0 /* AppBox.h in Headers */,
+				8DBE46777702EFC31D89846EF7E8FAB5 /* AppBoxSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B81B027108B4BF01F77286054B42E1E6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,11 +357,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA76D54CF7D5B53F9EEF54FAD76A20DD /* Headers */ = {
+		DCC13B1E3D1D9A54D39066AF839CFC00 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879EDA64F39CD8AD0E34A4DC87972093 /* Pods-PDFCart-umbrella.h in Headers */,
+				B866C9008AF3877205B34E331E535C4B /* Pods-PDFCart-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,22 +370,41 @@
 /* Begin PBXNativeTarget section */
 		3EB5AFA398D0645078B43BB13E28ED9C /* Pods-PDFCart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 509D33A0AF08DB25C9463A6D5E2EF1DA /* Build configuration list for PBXNativeTarget "Pods-PDFCart" */;
+			buildConfigurationList = 3F770C215E98289E0B9A960EB8A8CB21 /* Build configuration list for PBXNativeTarget "Pods-PDFCart" */;
 			buildPhases = (
-				CA76D54CF7D5B53F9EEF54FAD76A20DD /* Headers */,
-				B315581CED29274EB53D76C38ACA1999 /* Sources */,
-				C39CB4689E8CAC1C237DC56C1AD53FE2 /* Frameworks */,
-				A3324094C69B2B614D1B2D12EEBCF692 /* Resources */,
+				DCC13B1E3D1D9A54D39066AF839CFC00 /* Headers */,
+				6C159B417A4357D9E5FDF3931B7CE738 /* Sources */,
+				4E805927BADE56731E5367278ADDA03C /* Frameworks */,
+				1AA4225FE0D688459B14BACCED3051AC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C0F0002A2D5B615162B0C520B7C58716 /* PBXTargetDependency */,
-				0D707AC01010BE7FBCBFE20306A67274 /* PBXTargetDependency */,
+				FFC785B2B1420E30D8F07B5A924DD59E /* PBXTargetDependency */,
+				628FC51BD81834640515D004F8D4FF14 /* PBXTargetDependency */,
+				F88A211B4789ADBA640F13355405409F /* PBXTargetDependency */,
 			);
 			name = "Pods-PDFCart";
 			productName = "Pods-PDFCart";
 			productReference = AF6AB79D80F36F9AA78625D7A37F3839 /* Pods_PDFCart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79ABA9B00602F6679641C350D48CA14D /* AppBoxSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F0A99B0C66CB73AC2429E01E7E8D0E /* Build configuration list for PBXNativeTarget "AppBoxSDK" */;
+			buildPhases = (
+				664A5CEF5F82FD2C234DB6F649443FAA /* Headers */,
+				F8C248338DF7D697294D5F9274509BDA /* Sources */,
+				1D05D04C8B986233DDC55E9F0D1FC79A /* Frameworks */,
+				D349D8F5BAD5A29C5F96BF9E174B779A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppBoxSDK;
+			productName = AppBoxSDK;
+			productReference = 73338151ADF19945994D9B69AE0C35B4 /* AppBoxSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */ = {
@@ -341,12 +458,14 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 809EA6D9C3B92130993AB21CDB2FCAB2 /* Products */;
+			productRefGroup = CEA3E9C1BA48EBBE8C0763ACE50D8E47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				79ABA9B00602F6679641C350D48CA14D /* AppBoxSDK */,
 				989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */,
 				3EB5AFA398D0645078B43BB13E28ED9C /* Pods-PDFCart */,
 				B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */,
@@ -362,6 +481,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AA4225FE0D688459B14BACCED3051AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8812DCC289D1E7BE07818E350A3B8656 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,7 +495,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3324094C69B2B614D1B2D12EEBCF692 /* Resources */ = {
+		D349D8F5BAD5A29C5F96BF9E174B779A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,6 +511,14 @@
 			files = (
 				6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */,
 				4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C159B417A4357D9E5FDF3931B7CE738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C1BBEA0EDF248859AEB441B18EBD82 /* Pods-PDFCart-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,104 +538,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B315581CED29274EB53D76C38ACA1999 /* Sources */ = {
+		F8C248338DF7D697294D5F9274509BDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBE10436E0D6E1DFF0BFE480C6256CC /* Pods-PDFCart-dummy.m in Sources */,
+				DCE0C1A5963AC1926CCCBBB89AEEFCB2 /* ABLog.swift in Sources */,
+				6F18348B41BAB7DC9F8FF8FF817A2373 /* AppBox.swift in Sources */,
+				008C4E3039D51EB5D46814D6B6DA90A8 /* AppBoxSDK-dummy.m in Sources */,
+				5638905AF5F77707C6F564580ACD6C4E /* AppInfo.swift in Sources */,
+				C3448E1B63AFF1516FC848C39DDF0D0E /* AppInfoService.swift in Sources */,
+				93B69C97E86A2EC189181A40A5D34FBC /* Constants.swift in Sources */,
+				63E0C98B8C8E3091FFEF38D4A0575603 /* DataParser.swift in Sources */,
+				8DA563EB7DCBF4795EB4ABC11B5E2422 /* Enums.swift in Sources */,
+				1B6B3501CEE464968C18C1D4C8B2B62D /* UpdateAlertController.swift in Sources */,
+				B87D4CF37AED98B6503908091FC96247 /* UpdateWindow.swift in Sources */,
+				43C092BFE757137DE24278B1EC3D2856 /* UserDefaultExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D707AC01010BE7FBCBFE20306A67274 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Toast-Swift";
-			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
-			targetProxy = 202ABB2DA22F32F17F8E405254D5DF2D /* PBXContainerItemProxy */;
-		};
-		C0F0002A2D5B615162B0C520B7C58716 /* PBXTargetDependency */ = {
+		628FC51BD81834640515D004F8D4FF14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FTPopOverMenu_Swift;
 			target = 989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */;
-			targetProxy = 9F2FA0A1443BA28BA59294F695911007 /* PBXContainerItemProxy */;
+			targetProxy = 98E84DDBDCC04513B053BDB871F980B2 /* PBXContainerItemProxy */;
+		};
+		F88A211B4789ADBA640F13355405409F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = 10888E3ED3C6169855F33D74EC3D465B /* PBXContainerItemProxy */;
+		};
+		FFC785B2B1420E30D8F07B5A924DD59E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppBoxSDK;
+			target = 79ABA9B00602F6679641C350D48CA14D /* AppBoxSDK */;
+			targetProxy = 3A37AA6533DCFD6079B604B3B13AAB8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2BA1CA9E2D4878DDAB2B8A79B7F5C4CC /* Debug */ = {
+		16250B328B1E8FDA4898ECF9A15258E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66572A9EFEF287AD4CB1A0D646FA6357 /* FTPopOverMenu_Swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
-				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
-				PRODUCT_NAME = FTPopOverMenu_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5F58E63428B94986F700FB016FB4E8F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66572A9EFEF287AD4CB1A0D646FA6357 /* FTPopOverMenu_Swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
-				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
-				PRODUCT_NAME = FTPopOverMenu_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6103ACAF8D297D360AFAF08AF7B02DCF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41C03681383B237C2B95E5CFA2E00D92 /* Pods-PDFCart.release.xcconfig */;
+			baseConfigurationReference = 06BC5746EA5990B5D98255FF04C996D3 /* Pods-PDFCart.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -532,11 +613,81 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17D39D711BFE55BA0088E4F08C9A1F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF703EFC0EA2972E1C8BBB4FBAED5E29 /* Toast-Swift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		87AEE5BC238645494F7F94F67F2BED7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5E60F220BF5031AB88DDD919F94AE7 /* Toast-Swift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -602,46 +753,10 @@
 			};
 			name = Debug;
 		};
-		98898C6F52A6A7DBE554A243A24C2F51 /* Debug */ = {
+		95B0EE9AE4927F591C35CA9846A4AD1D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDBF92E1BA27FD3327195377B4EDA032 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = 866D18FC9EB4EEF645361C26916CA294 /* AppBoxSDK.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
-				PRODUCT_MODULE_NAME = Toast_Swift;
-				PRODUCT_NAME = Toast_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B320B6F1EF3A131B6A1E3A29254C890E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06BC5746EA5990B5D98255FF04C996D3 /* Pods-PDFCart.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -652,28 +767,133 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PDFCart/Pods-PDFCart-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AppBoxSDK/AppBoxSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PDFCart/Pods-PDFCart.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK.modulemap";
+				PRODUCT_MODULE_NAME = AppBoxSDK;
+				PRODUCT_NAME = AppBoxSDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		C93C6F17C55CB54B3269DC5C33B5D720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBAE72F969F0014B7895956C4828872 /* FTPopOverMenu_Swift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
+				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
+				PRODUCT_NAME = FTPopOverMenu_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1C0E609CA7BFC79989440A43F55CD8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923440CC20AC065DCD0FC46A672B683F /* FTPopOverMenu_Swift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
+				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
+				PRODUCT_NAME = FTPopOverMenu_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EAD8A1A1E151251B1962848727ED7E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B801716A326EB20AF8CEC3770452500C /* AppBoxSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AppBoxSDK/AppBoxSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AppBoxSDK/AppBoxSDK.modulemap";
+				PRODUCT_MODULE_NAME = AppBoxSDK;
+				PRODUCT_NAME = AppBoxSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -735,10 +955,12 @@
 			};
 			name = Release;
 		};
-		F3D7AA7B6797C4885E6D6232E7580830 /* Release */ = {
+		FEBBA408B101B8F24D80572EE1909597 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDBF92E1BA27FD3327195377B4EDA032 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = 41C03681383B237C2B95E5CFA2E00D92 /* Pods-PDFCart.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -748,22 +970,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PDFCart/Pods-PDFCart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
-				PRODUCT_MODULE_NAME = Toast_Swift;
-				PRODUCT_NAME = Toast_Swift;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PDFCart/Pods-PDFCart.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -774,6 +997,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F770C215E98289E0B9A960EB8A8CB21 /* Build configuration list for PBXNativeTarget "Pods-PDFCart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16250B328B1E8FDA4898ECF9A15258E0 /* Debug */,
+				FEBBA408B101B8F24D80572EE1909597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -783,11 +1015,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		509D33A0AF08DB25C9463A6D5E2EF1DA /* Build configuration list for PBXNativeTarget "Pods-PDFCart" */ = {
+		68F0A99B0C66CB73AC2429E01E7E8D0E /* Build configuration list for PBXNativeTarget "AppBoxSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B320B6F1EF3A131B6A1E3A29254C890E /* Debug */,
-				6103ACAF8D297D360AFAF08AF7B02DCF /* Release */,
+				95B0EE9AE4927F591C35CA9846A4AD1D /* Debug */,
+				EAD8A1A1E151251B1962848727ED7E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -795,8 +1027,8 @@
 		B8C401847A53B4C2810311A8CBD715AD /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98898C6F52A6A7DBE554A243A24C2F51 /* Debug */,
-				F3D7AA7B6797C4885E6D6232E7580830 /* Release */,
+				87AEE5BC238645494F7F94F67F2BED7A /* Debug */,
+				17D39D711BFE55BA0088E4F08C9A1F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -804,8 +1036,8 @@
 		BFB4BF174D5B0894019702BFAE0C5A81 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BA1CA9E2D4878DDAB2B8A79B7F5C4CC /* Debug */,
-				5F58E63428B94986F700FB016FB4E8F9 /* Release */,
+				C93C6F17C55CB54B3269DC5C33B5D720 /* Debug */,
+				E1C0E609CA7BFC79989440A43F55CD8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

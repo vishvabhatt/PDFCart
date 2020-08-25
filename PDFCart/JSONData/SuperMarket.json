@@ -1,8 +1,31 @@
 {
-    "pdfWidth" :0,
-    "pdfHeight":0,
+    "pdfWidth" :400,
+    "pdfHeight":566,
     "products":
     [
-      
+      {
+        "p_name": "Watermelone",
+        "p_coords": [40,180,95,150]
+      },
+      {
+        "p_name": "Cherry",
+        "p_coords": [152,180,95,150]
+      },
+      {
+        "p_name": "Banana",
+        "p_coords": [265,180,95,150]
+      },
+      {
+        "p_name": "Grapes",
+        "p_coords": [40,340,95,150]
+      },
+      {
+        "p_name": "Pinaapple",
+        "p_coords": [152,340,95,150]
+      },
+      {
+        "p_name": "Strawberries",
+        "p_coords": [265,340,95,150]
+      }
     ]
 }
