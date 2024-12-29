@@ -1,2 +1,2 @@
 # PDFCart
-- Add product to your wish list from PDF
+- Extracts tapped product from PDF to Cart. (Discontinued)
